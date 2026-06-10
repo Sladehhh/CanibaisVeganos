@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canibais Veganos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="canibaisveganos.png">
-    <style>
-    html{
-        background-color: #d43a28;
-    }
-    @font-face {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canibais Veganos</title>
+<link rel="icon" type="image/png" href="canibaisveganos.png">
+
+<style>
+html{
+    background-color: #d43a28;
+}
+
+@font-face {
     font-family: "BodoniFLF";
     src: url("./fonts/BodoniFLF-Roman.ttf") format("truetype");
-    }
-    body{
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        color: #FCDEA2;
-        font-size: 40px;
-    }
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FCDEA2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img{
+    width: min(500px, 80vw);
+    height: auto;
+}
+
+h1{
+    font-family: "BodoniFLF", serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 20px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px){
     img{
-        width: 500px;
+        width: 60vw;
     }
-    }
+}
 </style>
+</head>
 
 <body>
-<p>
-<img src = "canibaisveganos.png">
-</p>
-<h1>SITE FORA DO AR</h1>
+    <img src="canibaisveganos.png" alt="Canibais Veganos">
+    <h1>SITE FORA DO AR</h1>
 </body>
 </html>
